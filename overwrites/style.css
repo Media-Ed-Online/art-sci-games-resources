@@ -148,7 +148,7 @@ cursor: url(https://daringfireball.net/misc/2012/08/arrow.png), pointer;
 }
 
 /* CHOICES */
-.section li.snap-activity.modtype_quiz {
+.section li.snap-activity.modtype_choice {
    border-top-color: #9046CF;
    color: #9046CF;
 
