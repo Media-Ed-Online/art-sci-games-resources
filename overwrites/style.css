@@ -147,6 +147,18 @@ cursor: url(https://daringfireball.net/misc/2012/08/arrow.png), pointer;
    content: 'Special ';
 }
 
+/* CHOICES */
+.section li.snap-activity.modtype_quiz {
+   border-top-color: #9046CF;
+   color: #9046CF;
+
+   border-width: 6px;
+   border-right-color: #401961;
+   border-bottom-color: #401961;
+   border-left-color: #401961;
+}
+
+
 /* FORUMS */
 .section li.snap-activity.modtype_hsuforum {
    border-top-color: #06d6a0;
