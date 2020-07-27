@@ -1,7 +1,7 @@
 /* ------
 | GLOBAL |
 ------ */
-nav, h1, h2, h3, h4, h5, h6, li.snap-activity, .progressbar-text, #coursetools, #coursetools-list a { 
+nav, h1, h2, h3, h4, h5, h6, li.snap-activity, .progressbar-text, #coursetools, #coursetools-list a {
    font-family: 'Courier', monospace !important;
 }
 /*#page-header {
@@ -18,15 +18,15 @@ border: 5px solid gray;
 | MAIN NAV |
 -------- */
 /* Arrow Select Icon */
-nav>.chapters li:hover::before { 
-   background-image: url(https://media.giphy.com/media/LlFhIhRDZiDLfIwE9L/giphy.gif); 
-   background-size: 20px 22px; 
-   display: inline-block; 
-   float: left; 
-   width: 20px; 
-   height: 22px; 
-   margin-left: -25px; 
-   content:""; 
+nav>.chapters li:hover::before {
+   background-image: url(https://media.giphy.com/media/LlFhIhRDZiDLfIwE9L/giphy.gif);
+   background-size: 20px 22px;
+   display: inline-block;
+   float: left;
+   width: 20px;
+   height: 22px;
+   margin-left: -25px;
+   content:"";
 }
 /* Course Dashboard Icon */
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -61,20 +61,20 @@ nav>.chapters li:hover::before {
 /* #course-toc ol#chapters li:nth-child(3) img:last-of-type svg path:first-child {
 
 }
-@-webkit-keyframes bounce { 
-0%, 20%, 50%, 60%, 100% {-webkit-transform: translateY(0);} 
-40% {-webkit-transform: translateY(-30px);} 
-60% {-webkit-transform: translateY(-15px);} 
+@-webkit-keyframes bounce {
+0%, 20%, 50%, 60%, 100% {-webkit-transform: translateY(0);}
+40% {-webkit-transform: translateY(-30px);}
+60% {-webkit-transform: translateY(-15px);}
 }
 
-@keyframes bounce { 
-0%, 100% {transform: scaleY(1); transform: rotate(0);} 
+@keyframes bounce {
+0%, 100% {transform: scaleY(1); transform: rotate(0);}
 5% {transform: scaleY(0.6)}
-15% {transform: rotate(90deg); transform-origin: 100% 100%} 
-30% {transform: rotate(0)} 
+15% {transform: rotate(90deg); transform-origin: 100% 100%}
+30% {transform: rotate(0)}
 }
 
-.bounce { 
+.bounce {
 -webkit-animation: bounce 2s ease-in infinite;
 -moz-animation: bounce 3s ease-in infinite;
 animation: bounce 2s ease-in infinite;
@@ -97,7 +97,7 @@ animation: bounce 2s ease-in infinite;
 ------- */
 /* MULTIPLE, ALL */
 /* Button Styling */
-.section li.snap-resource.modtype_label, .section li.snap-activity.modtype_quiz, .section li.snap-activity.modtype_assign, .section li.snap-activity.modtype_hsuforum, section li.snap-activity.modtype_lesson {
+.section li.snap-resource.modtype_label, .section li.snap-activity.modtype_quiz, .section li.snap-activity.modtype_assign, .section li.snap-activity.modtype_hsuforum, section li.snap-activity.modtype_lesson, .section li.snap-activity.modtype_choice {
    border-width: 4px;
    border-right-color: lightgray;
    border-bottom-color: dimgrey;
@@ -107,7 +107,7 @@ animation: bounce 2s ease-in infinite;
    -moz-box-shadow: -8px 8px 0px 0px rgba(0,0,0,0.6);
    box-shadow: -8px 8px 0px 0px rgba(0,0,0,0.6);
 }
-.section li.snap-activity.modtype_quiz:active, .section li.snap-activity.modtype_assign:active, .section li.snap-activity.modtype_hsuforum:active, .section li.snap-activity.modtype_lesson:active {
+.section li.snap-activity.modtype_quiz:active, .section li.snap-activity.modtype_assign:active, .section li.snap-activity.modtype_hsuforum:active, .section li.snap-activity.modtype_lesson:active, .section li.snap-activity.modtype_choice:active {
    background-color: darkgrey;
    color: black;
    border-left-color: dimgrey;
@@ -136,7 +136,7 @@ cursor: url(https://daringfireball.net/misc/2012/08/arrow.png), pointer;
 /* ASSIGNMENTS */
 .section li.snap-activity.modtype_assign {
    border-top-color: #ef476f;
-   color: #ef476f; 
+   color: #ef476f;
 
    border-width: 6px;
    border-right-color: #ef476f;
@@ -148,7 +148,7 @@ cursor: url(https://daringfireball.net/misc/2012/08/arrow.png), pointer;
 }
 
 /* FORUMS */
-.section li.snap-activity.modtype_hsuforum { 
+.section li.snap-activity.modtype_hsuforum {
    border-top-color: #06d6a0;
    color: #06d6a0;
 
@@ -159,7 +159,7 @@ cursor: url(https://daringfireball.net/misc/2012/08/arrow.png), pointer;
 }
 
 /* LESSONS */
-.section li.snap-activity.modtype_lesson { 
+.section li.snap-activity.modtype_lesson {
    border-top-color: #118ab2;
    color: #118ab2;
 
@@ -170,7 +170,7 @@ cursor: url(https://daringfireball.net/misc/2012/08/arrow.png), pointer;
 }
 
 /* QUIZZES */
-.section li.snap-activity.modtype_quiz { 
+.section li.snap-activity.modtype_quiz {
    border-top-color: #ffd166;
    color: #ffd166;
 
