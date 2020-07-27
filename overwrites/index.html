@@ -1,0 +1,184 @@
+<!-- LEGACY OR UNUSED CODE -->
+
+
+<!-- Select specific nav links...
+----- HTML ----
+nav a[href^="/"], a[href^="#section-1"], a[href^="#section-6"], a[href^="#section-12"], a[href^="#section-15"], a[href^="#section-16"] {
+   color: orange !important;
+}
+-->
+
+
+<!-- Attempt at showing permanent 
+         "0 of # Unread" message...
+----- CSS -----
+.hsuforum-unreadcount  {
+   display:inline-block !important; float: right;
+}
+.modtype_hsuforum div.snap-asset-meta::after {
+   content: "View Posts";
+   white-space: pre; 
+   display: block !important;
+   clear: both; 
+   text-align: right; 
+   font-size: .75rem !important; 
+   margin-bottom: .5em;
+}
+.count-container.hidden {
+   display:block !important
+}
+-->
+
+
+<!-- Using FontAwesome icons in Progress Tracking
+         instead of SVGs...
+ ----- JS -----
+// Iterate all elements and replace with stars
+Array.from(document.querySelectorAll('small')).forEach((x) => {
+   [n, k] = x.innerHTML.replace('Progress: ', '').split('/');
+   text = '';
+   for (let i = 0; i < n; i++) text += '<i class="fa fa-star fa-lg" aria-hidden="true"></i>';
+   for (let i = 0; i < k - n; i++) text += '<i class="fa fa-star-o fa-lg" aria-hidden="true"></i>';
+
+   x.innerHTML = text;
+});
+ ----- CSS -----
+#course-toc i {
+   margin-right: 0.2em;
+   color: goldenrod;
+}
+-->
+
+
+<!-- Before using JS to replace images,
+         just with CS background override 
+----- CSS -----
+#course-toc .toc-footer>a#snap-course-tools img {  
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/png/512/465/465270.png) no-repeat; 
+   background-size: contain;
+   padding-left: 2rem;
+}
+#course-toc .toc-footer>a#snap-new-section img {  
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/png/512/408/408159.png) no-repeat; 
+   background-size: contain;
+   padding-left: 2rem;
+}
+#coursetools-list a#ct-course-settings img {
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/png/512/465/465270.png) no-repeat; 
+   background-size: 1.8rem 1.8rem;
+   background-position: center center;
+   padding-left: 2rem;
+}
+#coursetools-list a#ct-open-grader img {
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/409/409048.svg) no-repeat; 
+   background-size: 1.8rem 1.8rem;
+   background-position: center center;
+   padding-left: 2rem;
+   transform: rotate(90deg);
+}
+#coursetools-list a#ct-course-gradebook img {
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/409/409047.svg) no-repeat; 
+   background-size: 1.8rem 1.8rem;
+   background-position: center center;
+   padding-left: 2rem;
+   transform: rotate(90deg);
+}
+#coursetools-list a#ct-open-reports img {
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/png/512/465/465235.png) no-repeat; 
+   background-size: 1.8rem 1.8rem;
+   background-position: center center;
+   padding-left: 2rem;
+}
+#coursetools-list a#ct-pld img {
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/408/408137.svg) no-repeat; 
+   background-size: 1.8rem 1.8rem;
+   background-position: center center;
+   padding-left: 2rem;
+}
+#coursetools-list a#ct-competencies img {
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/465/465230.svg) no-repeat; 
+   background-size: 1.8rem 1.8rem;
+   background-position: center center;
+   padding-left: 2rem;
+}
+#coursetools-list a#ct-badges img {
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/465/465269.svg) no-repeat; 
+   background-size: 1.8rem 1.8rem;
+   background-position: center center;
+   padding-left: 2rem;
+}
+#coursetools-list a#ct-ally img {
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/465/465231.svg) no-repeat; 
+   background-size: 1.8rem 1.8rem;
+   background-position: center center;
+   padding-left: 2rem;
+}
+.assign .activityicon { 
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/409/409094.svg) no-repeat; 
+   background-size: contain; 
+   padding-left: 50px;
+}
+.assign#module-1545372 .activityicon { 
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/391/391396.svg) no-repeat; 
+   background-size: contain; 
+   padding-left: 50px;
+}
+.hsuforum .activityicon { 
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/409/409109.svg) no-repeat; 
+   background-size: contain; 
+   padding-left: 50px;
+}
+.lesson .activityicon { 
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/409/409115.svg) no-repeat; 
+   background-size: contain; 
+   padding-left: 50px;
+}
+.quiz .activityicon { 
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: white url(https://image.flaticon.com/icons/svg/409/409119.svg) no-repeat; 
+   background-size: contain; 
+   padding-left: 50px;
+}
+-->
