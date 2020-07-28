@@ -108,6 +108,10 @@ $('img').each(function () {
    if ( curSrc === 'https://moodle.umt.edu/theme/image.php/snap/assign/1594831820/icon' ) {
       $(this).attr('src', 'https://image.flaticon.com/icons/svg/409/409094.svg');
    }
+   // Activity Icons: Choice
+   if ( curSrc === 'https://moodle.umt.edu/theme/image.php/snap/choice/1594831820/icon' ) {
+      $(this).attr('src', 'https://image.flaticon.com/icons/svg/408/408196.svg');
+   }
    // Activity Icons: Forums
    if ( curSrc === 'https://moodle.umt.edu/theme/image.php/snap/hsuforum/1594831820/icon' ) {
       $(this).attr('src', 'https://image.flaticon.com/icons/svg/409/409109.svg');
