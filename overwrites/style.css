@@ -18,6 +18,9 @@ border: 5px solid gray;
 | MAIN NAV |
 -------- */
 /* Arrow Select Icon */
+nav>.chapters li {
+  list-style-type: none;
+}
 nav>.chapters li:hover::before {
    background-image: url(https://media.giphy.com/media/LlFhIhRDZiDLfIwE9L/giphy.gif);
    background-size: 20px 22px;
