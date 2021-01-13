@@ -27,7 +27,6 @@
         width: 300px;
         height: 200px;
         position: absolute;
-        right: 100px;
         background: #005ece;
         -webkit-box-shadow: 5px 5px 0px 0px #ccc;
         -moz-box-shadow: 5px 5px 0px 0px #ccc;
@@ -35,9 +34,9 @@
       }
       /*----- Speech Bubble -----*/
       #bubble {
-        width: 160px;
+        width: 250px;
         position: absolute;
-        left: -100px;
+        left: -60px;
         top: 0px;
         -webkit-animation: floating 2s steps(5, jump-none) infinite;
         -moz-animation: floating 2s steps(5, jump-none) infinite;
@@ -80,11 +79,32 @@
       }
       @keyframes talking {
         0%, 24%, 50%, 74%, 100% {
-          background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-smile.svg") no-repeat;
+          background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-happy.svg") no-repeat;
+          position: absolute;
+          right: 43px
         }
         25%, 49%, 75%, 99% {
-          background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-suprised.svg") no-repeat;
+          background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-happy.svg") no-repeat;
+          padding: absolute;
+          right: 40px;
         }
+      }
+      @keyframes skewing {
+        0%, 24%, 50%, 74%, 100% {
+          -webkit-transform:  perspective(10em) rotateY(-20deg);
+          -moz-transform:  perspective(10em) rotateY(-20deg);
+          -o-transform:  perspective(10em) rotateY(-20deg);
+          transform: perspective(10em) rotateY(-20deg);
+        }
+        25%, 49%, 75%, 99% {
+          -webkit-transform:  perspective(75em) rotateY(20deg);
+          -moz-transform:  perspective(75em) rotateY(20deg);
+          -o-transform:  perspective(75em) rotateY(20deg);
+          transform: perspective(75em) rotateY(20deg);
+        }
+      }
+      .skewed {
+        animation: skewing 2s linear infinite;
       }
   </style>
 </head>
@@ -95,7 +115,7 @@
     <div class="character-box">
       <img id="bubble" src="https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/speech-bubble-assist.gif"></img>
       <div class="star-talk-expressions">
-        <img src="https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/star-filled.svg" style="width: 130px; margin: 60px 10px 0 0">
+        <img src="https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/star-filled.svg" class="skewed" style="width: 130px; margin: 60px 10px 0 0">
       </div>
     </div>
   </div>
