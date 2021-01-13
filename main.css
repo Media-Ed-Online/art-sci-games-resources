@@ -1,0 +1,462 @@
+/* -------------------
+| VARIABLES & MIXINS |
+------------------- */
+/* -------------
+| TEXT STYLING |
+------------- */
+/* --- font --- */
+nav,
+h1, h2, h3, h4, h5, h6,
+li.snap-activity,
+.progressbar-text,
+#coursetools,
+#coursetools-list a {
+  font-family: "Courier", monospace !important;
+}
+
+/* --- highlight text --- */
+span.highlight {
+  color: #3d3d3d !important;
+  font-weight: bold;
+  background: #FFCC33;
+  padding: 2px 5px;
+}
+
+/* --- hide  edit dates --- */
+.modified {
+  visibility: hidden;
+}
+
+/* --- glossary table --- */
+table.glossary {
+  width: 90%;
+  margin: auto;
+}
+table.glossary th {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+table.glossary tr:not(:last-of-type) {
+  border-bottom: 2px solid #eaeaea;
+}
+table.glossary td {
+  padding: 10px 20px;
+  vertical-align: top;
+}
+table.glossary td:first-of-type, table.glossary td:last-of-type {
+  width: 200px;
+}
+
+/* --- captions --- */
+.caption {
+  font-size: 10pt;
+  color: #999;
+  text-align: right;
+  margin: 1em 0;
+}
+
+/* -------------
+| IMAGE STYLING|
+------------- */
+/* --- captioned images --- */
+.img-cap-right {
+  width: 250px;
+  display: inline-block;
+  padding: 1em;
+  margin: 0 0 1em 1em;
+  float: right;
+  border: 1px solid #565656;
+  -webkit-box-shadow: -5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+  clear: both;
+}
+.img-cap-right img {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+/* -----------------------------
+| TABLE OF CONTENTS / MAIN NAV |
+----------------------------- */
+nav {
+  /* --- arrow select icon --- */
+  /* --- footer icons  --- */
+}
+nav .chapters li {
+  list-style-type: none;
+}
+nav .chapters li:hover::before {
+  content: '';
+  width: 20px;
+  height: 22px;
+  float: left;
+  margin-left: -25px;
+  background-image: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/pointing-arrow.webp");
+  background-size: 20px 22px;
+}
+nav#course-toc .toc-footer > a#snap-new-section img {
+  background: url("https://image.flaticon.com/icons/png/512/408/408159.png") no-repeat;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size: contain;
+  padding-left: 2rem;
+}
+nav#course-toc .toc-footer > a#snap-course-tools img {
+  background: url("https://image.flaticon.com/icons/png/512/465/465270.png") no-repeat;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size: contain;
+  padding-left: 2rem;
+}
+
+/* --------------------
+| COMPLETION TRACKING |
+-------------------- */
+/* --- footer icons  --- */
+#course-toc {
+  /* --- hide checkmark --- */
+  /* --- icon size  --- */
+  /* --- icon placement  --- */
+}
+#course-toc .snap-section-complete {
+  display: none !important;
+}
+#course-toc ol#chapters img {
+  width: 1rem;
+  margin-right: 0.3rem;
+}
+#course-toc small {
+  margin-left: 4em;
+}
+
+/* ------------------
+| MAIN PAGE CONTENT |
+------------------ */
+/* --- hide topic #s --- */
+section#region-main {
+  /* --- hide icons inside activity headings --- */
+}
+section#region-main .course-content .topics span.sectionnumber {
+  display: none;
+}
+section#region-main #hsuforum-header img.activityicon {
+  display: none;
+}
+
+/* -------------
+| COURSE TOOLS |
+------------- */
+/* --- progress bar fills --- */
+.snap-student-dashboard-progress .js-progressbar-circle svg path:last-child {
+  stroke: #00CCB3;
+}
+
+.snap-student-dashboard-grade .js-progressbar-circle svg path:last-child {
+  stroke: #FF6699;
+}
+
+/* --- course tools icons --- */
+#coursetools-list img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size: contain;
+  background-position: center center;
+  padding-left: 2rem;
+}
+#coursetools-list a .snap-cover-icon,
+#coursetools-list a .userpicture {
+  border-radius: 0;
+}
+#coursetools-list a#ct-course-settings img {
+  background: white url("https://image.flaticon.com/icons/svg/465/465270.svg") no-repeat;
+}
+#coursetools-list a#ct-open-grader img {
+  background: white url("https://image.flaticon.com/icons/svg/409/409048.svg") no-repeat;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#coursetools-list a#ct-course-gradebook img {
+  background: white url("https://image.flaticon.com/icons/svg/409/409047.svg") no-repeat;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#coursetools-list a#ct-participants-number {
+  /* --- boy --- */
+  /* --- girl --- */
+}
+#coursetools-list a#ct-participants-number .userpicture:nth-child(odd) {
+  background: white url("https://image.flaticon.com/icons/svg/408/408143.svg") no-repeat;
+}
+#coursetools-list a#ct-participants-number .userpicture:nth-child(even) {
+  background: white url("https://image.flaticon.com/icons/svg/408/408140.svg") no-repeat;
+}
+#coursetools-list a#ct-open-reports img {
+  background: white url("https://image.flaticon.com/icons/svg/465/465235.svg") no-repeat;
+}
+#coursetools-list a#ct-pld img {
+  background: white url("https://image.flaticon.com/icons/svg/408/408137.svg") no-repeat;
+}
+#coursetools-list a#ct-competencies img {
+  background: white url("https://image.flaticon.com/icons/svg/465/465230.svg") no-repeat;
+}
+#coursetools-list a#ct-badges img {
+  background: white url(https://image.flaticon.com/icons/svg/465/465269.svg) no-repeat;
+}
+#coursetools-list a#ct-ally img {
+  background: white url("https://image.flaticon.com/icons/svg/465/465231.svg") no-repeat;
+}
+
+/* -----------
+| ACTIVITIES |
+----------- */
+/* --- shadowed button effect --- */
+.section li.snap-activity {
+  -webkit-box-shadow: -8px 8px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -8px 8px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -8px 8px 0px 0px rgba(0, 0, 0, 0.5);
+  /* --- assignments --- */
+  /* --- choice --- */
+  /* --- forums --- */
+  /* --- lessons --- */
+  /* --- quizzes --- */
+}
+.section li.snap-activity:active {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate(-9px, 9px);
+  -moz-transform: translate(-9px, 9px);
+  -o-transform: translate(-9px, 9px);
+  -ms-transform: translate(-9px, 9px);
+  transform: translate(-9px, 9px);
+}
+.section li.snap-activity a > p.instancename {
+  font-size: 125%;
+}
+.section li.snap-activity.modtype_assign {
+  border-top-color: #FF6699;
+  border-right-color: #FF6699;
+  border-bottom-color: #cc0044;
+  border-left-color: #cc0044;
+  border-width: 5px;
+}
+.section li.snap-activity.modtype_assign a {
+  color: #FF6699 !important;
+}
+.section li.snap-activity.modtype_assign .activityicon {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size: contain;
+  padding-left: 50px;
+  background: white url("https://image.flaticon.com/icons/svg/409/409094.svg") no-repeat;
+}
+.section li.snap-activity.modtype_choice {
+  border-top-color: #00CCB3;
+  border-right-color: #00CCB3;
+  border-bottom-color: #00332d;
+  border-left-color: #00332d;
+  border-width: 5px;
+}
+.section li.snap-activity.modtype_choice a {
+  color: #00CCB3 !important;
+}
+.section li.snap-activity.modtype_choice .activityicon {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size: contain;
+  padding-left: 50px;
+  background: white url("") no-repeat;
+}
+.section li.snap-activity.modtype_hsuforum {
+  border-top-color: #66CC66;
+  border-right-color: #66CC66;
+  border-bottom-color: #267326;
+  border-left-color: #267326;
+  border-width: 5px;
+  /* --- announcements forum --- */
+}
+.section li.snap-activity.modtype_hsuforum a {
+  color: #66CC66 !important;
+}
+.section li.snap-activity.modtype_hsuforum .activityicon {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size: contain;
+  padding-left: 50px;
+  background: white url("https://image.flaticon.com/icons/svg/409/409109.svg") no-repeat;
+}
+.section li.snap-activity.modtype_hsuforum:nth-of-type(3) {
+  border-top-color: #CC0033;
+  border-right-color: #CC0033;
+  border-bottom-color: #33000d;
+  border-left-color: #33000d;
+  border-width: 5px;
+}
+.section li.snap-activity.modtype_hsuforum:nth-of-type(3) a {
+  color: #CC0033 !important;
+}
+.section li.snap-activity.modtype_lesson {
+  border-top-color: #00CCB3;
+  border-right-color: #00CCB3;
+  border-bottom-color: #00332d;
+  border-left-color: #00332d;
+  border-width: 5px;
+}
+.section li.snap-activity.modtype_lesson a {
+  color: #00CCB3 !important;
+}
+.section li.snap-activity.modtype_lesson .activityicon {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size: contain;
+  padding-left: 50px;
+  background: white url("https://image.flaticon.com/icons/svg/409/409115.svg") no-repeat;
+}
+.section li.snap-activity.modtype_quiz {
+  border-top-color: #FFCC33;
+  border-right-color: #FFCC33;
+  border-bottom-color: #997300;
+  border-left-color: #997300;
+  border-width: 5px;
+}
+.section li.snap-activity.modtype_quiz a {
+  color: #FFCC33 !important;
+}
+.section li.snap-activity.modtype_quiz .activityicon {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size: contain;
+  padding-left: 50px;
+  background: white url("https://image.flaticon.com/icons/svg/409/409119.svg") no-repeat;
+}
+
+/* --- "special" assignments --- */
+.hsuforum#module-1545594 .snap-assettype::before,
+.assign#module-1545372 .snap-assettype::before {
+  content: "Special ";
+}
+
+/* ----------
+| RESOURCES |
+---------- */
+.section li.snap-native {
+  /* --- books --- */
+  /* --- books --- */
+}
+.section li.snap-native.modtype_book .instancename {
+  font-size: 125%;
+}
+.section li.snap-native.modtype_book a {
+  color: #FF6699 !important;
+}
+.section li.snap-native.modtype_page .summary-figure {
+  width: 150px;
+}
+
+/* ---------------
+| LESSON STYLING |
+--------------- */
+/* --- clearfix --- */
+.slideshow div.contents::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* --- score --- */
+div.ongoing {
+  font-family: "Courier", monospace !important;
+  background: #00CCB3;
+  color: white;
+  padding-left: 30px;
+  margin-bottom: 1em;
+}
+
+/* --- buttons --- */
+.branchbuttoncontainer {
+  text-align: center;
+}
+
+.btn {
+  transition: 0s !important;
+}
+.singlebutton,
+input[type="submit"], .btn-secondary:not(label), .btn-primary {
+  font-family: "Courier", monospace !important;
+  font-size: 110%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  border-top-color: #565656;
+  border-right-color: #565656;
+  border-bottom-color: #0a0a0a;
+  border-left-color: #0a0a0a;
+  border-width: 5px;
+  -webkit-box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+}
+.singlebutton:hover,
+input[type="submit"]:hover, .btn-secondary:not(label):hover, .btn-primary:hover {
+  background: #565656 !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+.singlebutton:active,
+input[type="submit"]:active, .btn-secondary:not(label):active, .btn-primary:active {
+  background: #292929;
+  color: white !important;
+  text-decoration: none !important;
+  border-top-color: #292929;
+  border-right-color: #292929;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-width: 5px;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate(-2px, 2px);
+  -moz-transform: translate(-2px, 2px);
+  -o-transform: translate(-2px, 2px);
+  -ms-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px);
+}
+
+/* --- progress bar --- */
+.theme-snap .progress .bar,
+.theme-snap .dndupload-progress-outer .bar {
+  font-family: "Courier", monospace !important;
+  background: #00CCB3 !important;
+  color: white;
+}
+
+/* --- forms --- */
+/* --- short answer input --- */
+fieldset#id_pageheader div.form-inline .form-group {
+  display: inline-block;
+}
+
+/* --- true/false buttons --- */
+.form-inline label.form-check-label {
+  width: 4em !important;
+}
+.form-inline label.form-check-label p {
+  display: inline-block;
+}

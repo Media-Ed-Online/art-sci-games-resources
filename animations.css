@@ -1,0 +1,606 @@
+/* -------------------
+| VARIABLES & MIXINS |
+------------------- */
+
+/* ----------------
+| MAIN NAVIGATION |
+---------------- */
+nav {
+  /* --- spin cog  --- */
+}
+nav#course-toc .toc-footer > a#snap-course-tools img:hover {
+  -webkit-animation: spin 1.5s linear infinite;
+  -moz-animation: spin 1.5s linear infinite;
+  -ms-animation: spin 1.5s linear infinite;
+  -o-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* --------------
+| SPEECH BUBBLE |
+-------------- */
+.bubble-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 1em auto;
+  position: relative;
+}
+.bubble-container::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.bubble-container .bubble {
+  width: 100%;
+  font-family: "Courier", monospace !important;
+  display: inline-block;
+  padding: 1rem;
+  margin: 1rem auto 4rem;
+  background: white;
+  border: 4px solid #292929;
+  -webkit-filter: drop-shadow(-6px 6px 0px rgba(0, 0, 0, 0.5));
+  -moz-filter: drop-shadow(-6px 6px 0px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(-6px 6px 0px rgba(0, 0, 0, 0.5));
+}
+.bubble-container .bubble::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  border: 40px solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -20px;
+  margin-bottom: -40px;
+}
+.bubble-container .bubble::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 96px;
+  border: 50px solid transparent;
+  border-top-color: #292929;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -20px;
+  margin-bottom: -40px;
+}
+
+/* -----------------------
+| PROGRESS TRACKING ICON |
+----------------------- */
+@-webkit-keyframes bounce {
+  0%, 28%, 30%, 35%, 100% {
+    -webkit-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    transform: translateY(0) scale(1, 1);
+  }
+  10%, 15% {
+    -webkit-transform: translateY(0) scale(1.25, 0.75);
+    -moz-transform: translateY(0) scale(1.25, 0.75);
+    -o-transform: translateY(0) scale(1.25, 0.75);
+    -ms-transform: translateY(0) scale(1.25, 0.75);
+    transform: translateY(0) scale(1.25, 0.75);
+  }
+  18% {
+    -webkit-transform: translateY(-3px) scale(1, 1);
+    -moz-transform: translateY(-3px) scale(1, 1);
+    -o-transform: translateY(-3px) scale(1, 1);
+    -ms-transform: translateY(-3px) scale(1, 1);
+    transform: translateY(-3px) scale(1, 1);
+  }
+  20%, 25% {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  33% {
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}
+@-moz-keyframes bounce {
+  0%, 28%, 30%, 35%, 100% {
+    -webkit-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    transform: translateY(0) scale(1, 1);
+  }
+  10%, 15% {
+    -webkit-transform: translateY(0) scale(1.25, 0.75);
+    -moz-transform: translateY(0) scale(1.25, 0.75);
+    -o-transform: translateY(0) scale(1.25, 0.75);
+    -ms-transform: translateY(0) scale(1.25, 0.75);
+    transform: translateY(0) scale(1.25, 0.75);
+  }
+  18% {
+    -webkit-transform: translateY(-3px) scale(1, 1);
+    -moz-transform: translateY(-3px) scale(1, 1);
+    -o-transform: translateY(-3px) scale(1, 1);
+    -ms-transform: translateY(-3px) scale(1, 1);
+    transform: translateY(-3px) scale(1, 1);
+  }
+  20%, 25% {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  33% {
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}
+@-ms-keyframes bounce {
+  0%, 28%, 30%, 35%, 100% {
+    -webkit-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    transform: translateY(0) scale(1, 1);
+  }
+  10%, 15% {
+    -webkit-transform: translateY(0) scale(1.25, 0.75);
+    -moz-transform: translateY(0) scale(1.25, 0.75);
+    -o-transform: translateY(0) scale(1.25, 0.75);
+    -ms-transform: translateY(0) scale(1.25, 0.75);
+    transform: translateY(0) scale(1.25, 0.75);
+  }
+  18% {
+    -webkit-transform: translateY(-3px) scale(1, 1);
+    -moz-transform: translateY(-3px) scale(1, 1);
+    -o-transform: translateY(-3px) scale(1, 1);
+    -ms-transform: translateY(-3px) scale(1, 1);
+    transform: translateY(-3px) scale(1, 1);
+  }
+  20%, 25% {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  33% {
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}
+@-o-keyframes bounce {
+  0%, 28%, 30%, 35%, 100% {
+    -webkit-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    transform: translateY(0) scale(1, 1);
+  }
+  10%, 15% {
+    -webkit-transform: translateY(0) scale(1.25, 0.75);
+    -moz-transform: translateY(0) scale(1.25, 0.75);
+    -o-transform: translateY(0) scale(1.25, 0.75);
+    -ms-transform: translateY(0) scale(1.25, 0.75);
+    transform: translateY(0) scale(1.25, 0.75);
+  }
+  18% {
+    -webkit-transform: translateY(-3px) scale(1, 1);
+    -moz-transform: translateY(-3px) scale(1, 1);
+    -o-transform: translateY(-3px) scale(1, 1);
+    -ms-transform: translateY(-3px) scale(1, 1);
+    transform: translateY(-3px) scale(1, 1);
+  }
+  20%, 25% {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  33% {
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}
+@keyframes bounce {
+  0%, 28%, 30%, 35%, 100% {
+    -webkit-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    transform: translateY(0) scale(1, 1);
+  }
+  10%, 15% {
+    -webkit-transform: translateY(0) scale(1.25, 0.75);
+    -moz-transform: translateY(0) scale(1.25, 0.75);
+    -o-transform: translateY(0) scale(1.25, 0.75);
+    -ms-transform: translateY(0) scale(1.25, 0.75);
+    transform: translateY(0) scale(1.25, 0.75);
+  }
+  18% {
+    -webkit-transform: translateY(-3px) scale(1, 1);
+    -moz-transform: translateY(-3px) scale(1, 1);
+    -o-transform: translateY(-3px) scale(1, 1);
+    -ms-transform: translateY(-3px) scale(1, 1);
+    transform: translateY(-3px) scale(1, 1);
+  }
+  20%, 25% {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  33% {
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}
+.star-icon {
+  -webkit-animation: bounce 2s ease-in-out infinite;
+  -moz-animation: bounce 2s ease-in-out infinite;
+  -ms-animation: bounce 2s ease-in-out infinite;
+  -o-animation: bounce 2s ease-in-out infinite;
+  animation: bounce 2s ease-in-out infinite;
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+
+/* -----------------------------
+| LARGE BOUNCE WITH EXPRESSION |
+----------------------------- */
+/* --- bounce & smile --- */
+@-webkit-keyframes bounceExpression {
+  0%, 5%, 37%, 100% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-smile.svg") no-repeat;
+  }
+  6%, 15% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-shy.svg") no-repeat;
+  }
+  16%, 36% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-happy.svg") no-repeat;
+  }
+}
+@-moz-keyframes bounceExpression {
+  0%, 5%, 37%, 100% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-smile.svg") no-repeat;
+  }
+  6%, 15% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-shy.svg") no-repeat;
+  }
+  16%, 36% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-happy.svg") no-repeat;
+  }
+}
+@-ms-keyframes bounceExpression {
+  0%, 5%, 37%, 100% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-smile.svg") no-repeat;
+  }
+  6%, 15% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-shy.svg") no-repeat;
+  }
+  16%, 36% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-happy.svg") no-repeat;
+  }
+}
+@-o-keyframes bounceExpression {
+  0%, 5%, 37%, 100% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-smile.svg") no-repeat;
+  }
+  6%, 15% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-shy.svg") no-repeat;
+  }
+  16%, 36% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-happy.svg") no-repeat;
+  }
+}
+@keyframes bounceExpression {
+  0%, 5%, 37%, 100% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-smile.svg") no-repeat;
+  }
+  6%, 15% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-shy.svg") no-repeat;
+  }
+  16%, 36% {
+    background: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/stars/face-happy.svg") no-repeat;
+  }
+}
+.star-bounce-expressions {
+  width: 100px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+  -moz-animation: bounce 2s ease-in-out infinite;
+  -ms-animation: bounce 2s ease-in-out infinite;
+  -o-animation: bounce 2s ease-in-out infinite;
+  animation: bounce 2s ease-in-out infinite;
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+.star-bounce-expressions::after {
+  content: '';
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  position: absolute;
+  top: 28px;
+  left: 22px;
+  -webkit-animation: bounceExpression 2s ease-in-out infinite;
+  -moz-animation: bounceExpression 2s ease-in-out infinite;
+  -ms-animation: bounceExpression 2s ease-in-out infinite;
+  -o-animation: bounceExpression 2s ease-in-out infinite;
+  animation: bounceExpression 2s ease-in-out infinite;
+  clear: both;
+}
+
+/* -------------------------
+| INTRO ANIMATION (POPUPS) |
+------------------------- */
+/* --- group --- */
+#moodle-intro {
+   position: relative;
+   width: 100%;
+   height: 400px;
+   overflow: hidden;
+}
+#moodle-intro a {
+   color: #333 !important;
+   text-decoration: none;
+}
+/* --- popups --- */
+.popup {
+  position: relative;
+   width: 300px;
+   height: auto;
+   padding: 5px !important;
+   background: white;
+   cursor: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/mouse-pointer.png"),
+      auto;
+   border: 2px solid #292929 !important;
+   -webkit-box-shadow: -6px 6px 0px 0px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: -6px 6px 0px 0px rgba(0, 0, 0, 0.6);
+           box-shadow: -6px 6px 0px 0px rgba(0, 0, 0, 0.6);
+}
+.popup .bar {
+  position: relative;
+  height: 1.5em;
+  display: block;
+  background: #006df2;
+}
+.popup .bar::before {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 0.25em;
+  right: 0.5em;
+  background-image: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/icons/incomplete.svg");
+ }
+.popup .text {
+  padding: 0.5em;
+}
+.popup .gray-button {
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  background: #d7d7d7;
+  outline: 2px outset gray;
+  text-align: center;
+  font-size: small;
+	cursor: url("https://media-ed-online.github.io/art-sci-games-resources/graphics/mouse-pointer.png"),
+      auto;
+}
+/* --- loading bar --- */
+.popup .loading {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  background: #006df2;
+  outline: 2px inset gray;
+  text-align: center;
+  font-size: small;
+  overflow: hidden;
+}
+.popup .loading::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 20px;
+	background: #d7d7d7;
+	left: 0;
+	-webkit-animation: loading-bar 4s steps(20, end) infinite;
+		 -moz-animation: loading-bar 4s steps(20, end) infinite;
+			-ms-animation: loading-bar 4s steps(20, end) infinite;
+		 	 -o-animation: loading-bar 4s steps(20, end) infinite;
+					animation: loading-bar 4s steps(20, end) infinite;
+}
+@-webkit-keyframes loading-bar {
+  from {left: 0;}
+  to {left: 300px;}
+}
+@-moz-keyframes loading-bar {
+  from {left: 0;}
+  to {left: 300px;}
+}
+@-ms-keyframes loading-bar {
+  from {left: 0;}
+  to {left: 300px;}
+}
+@-o-keyframes loading-bar {
+  from {left: 0;}
+  to {left: 300px;}
+}
+@keyframes loading-bar {
+  from {left: 0;}
+  to {left: 300px;}
+}
+/* --- main popup (title) --- */
+.box1 {
+   margin: auto !important;
+}
+/* --- popup 2 (date) --- */
+.box2 {
+   position: absolute;
+   bottom: 10px;
+   right: 0px;
+   -webkit-animation: popupTwo 2s ease-in-out infinite;
+      -moz-animation: popupTwo 2s ease-in-out infinite;
+       -ms-animation: popupTwo 2s ease-in-out infinite;
+        -o-animation: popupTwo 2s ease-in-out infinite;
+           animation: popupTwo 2s ease-in-out infinite;
+   animation-duration: 10s;
+   animation-delay: 5s;
+}
+@keyframes popupTwo {
+  0%, 38%, 87%, 100% {
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+				-ms-transform: scale(0);
+	    			transform: scale(0);
+  }
+  40%, 85% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+	      -ms-transform: scale(1);
+	          transform: scale(1);
+  }
+}
+/* --- popup 3 (button) --- */
+.box3 {
+   position: absolute;
+   top: 100px;
+   left: 10px;
+   -webkit-animation: popupThree 2s ease-in-out infinite;
+      -moz-animation: popupThree 2s ease-in-out infinite;
+       -ms-animation: popupThree 2s ease-in-out infinite;
+        -o-animation: popupThree 2s ease-in-out infinite;
+           animation: popupThree 2s ease-in-out infinite;
+   animation-duration: 10s;
+   animation-delay: 3s;
+}
+@keyframes popupThree {
+  0%, 23%, 97%, 100% {
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+				-ms-transform: scale(0);
+	    			transform: scale(0);
+  }
+  25%, 95% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+				-ms-transform: scale(1);
+	  			  transform: scale(1);
+  }
+}
+/* --- popup 4 (loading) --- */
+.box4 {
+   position: absolute;
+   top: 200px;
+   right: 200px;
+   -webkit-animation: popupFour 2s ease-in-out infinite;
+      -moz-animation: popupFour 2s ease-in-out infinite;
+       -ms-animation: popupFour 2s ease-in-out infinite;
+        -o-animation: popupFour 2s ease-in-out infinite;
+           animation: popupFour 2s ease-in-out infinite;
+   animation-duration: 10s;
+   animation-delay: 6s;
+}
+@-webkit-keyframes popupFour {
+  from {left: 0;}
+  to {left: 300px;}
+}
+@-moz-keyframes popupFour {
+  from {left: 0;}
+  to {left: 300px;}
+}
+@-ms-keyframes popupFour {
+  from {left: 0;}
+  to {left: 300px;}
+}
+@-o-keyframes popupFour {
+  from {left: 0;}
+  to {left: 300px;}
+}
+@keyframes popupFour {
+  0%, 52%, 97%, 100% {
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+				-ms-transform: scale(0);
+	    			transform: scale(0);
+  }
+  54%, 95% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+				-ms-transform: scale(1);
+	    			transform: scale(1);
+  }
+}
